@@ -15,7 +15,7 @@ const Works = () => {
                         <div className="col-sm-4">
                             <div className="imagen-overlay">
                                 <Link to="/paintings">
-                                    <img width='100%' src="./images/home/amet-notebook.png" alt="Amet notebook" />
+                                    <img width='100%' src="./images/work/work1_painting.png" alt="Amet notebook" />
                                     <div className="text-overlay">
                                         <p>click to watch Amet's paintings</p>
                                     </div>
@@ -30,12 +30,12 @@ const Works = () => {
                 <div>
                     <div className="row justify-content-center align-items-center py-5">
                         <div className="col-sm-7 text-end">
-                            <h2 className="display-5">Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart</h2>
+                            <h2 className="display-5">Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart Videoart </h2>
                         </div>
                         <div className="col-sm-4">
                             <div className="imagen-overlay">
                                 <Link to="/video-art">
-                                    <img width='100%' src="./images/home/amet-notebook.png" alt="Amet notebook" />
+                                    <img width='100%' src="./images/work/work2_videoart.jpeg" alt="Amet notebook" />
                                     <div className="text-overlay">
                                         <p>click to watch Amet's video Arts</p>
                                     </div>
@@ -49,7 +49,7 @@ const Works = () => {
                         <div className="col-sm-4">
                             <div className="imagen-overlay">
                                 <Link to="/performance">
-                                    <img width='100%' src="./images/home/amet-notebook.png" alt="Amet notebook" />
+                                    <img width='100%' src="./images/work/work3_performance.jpeg" alt="Amet notebook" />
                                     <div className="text-overlay">
                                         <p>click to watch Amet's performance</p>
                                     </div>
@@ -70,7 +70,7 @@ const Works = () => {
                         <div className="col-sm-4">
                             <div className="imagen-overlay">
                                 <Link to="/gallery">
-                                    <img width='100%' src="./images/home/amet-notebook.png" alt="Amet notebook" />
+                                    <img width='100%' src="./images/work/work4_gallery.jpeg" alt="Amet notebook" />
                                     <div className="text-overlay">
                                         <p>click to watc Amet's gallery</p>
                                     </div>
