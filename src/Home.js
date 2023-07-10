@@ -26,10 +26,10 @@ const Home = () => {
                     </div>
                     <div className="col-sm-4">
                         <div className="imagen-overlay">
-                            <Link to="/paintings">
+                            <Link to="/works">
                                 <img width='100%' src="./images/home/amet-notebook.png" alt="Amet notebook" />
                                 <div className="text-overlay">
-                                    <p>click to watch more paintings</p>
+                                    <p>click to watch Amet's work</p>
                                 </div>
                             </Link>
                         </div>
