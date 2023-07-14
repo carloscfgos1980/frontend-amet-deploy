@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 export const getDataAsync = createAsyncThunk(
     'gallery/getDataAsync',
     async () => {
-        const response = await fetch('https://backendamet.azurewebsites.net/painting');
+        const response = await fetch('https://backend-amet.azurewebsites.net/painting');
         if (response.ok) {
             const data = await response.json();
             return { data }
@@ -14,7 +14,7 @@ export const getDataAsync = createAsyncThunk(
 export const paintReservedAsync = createAsyncThunk(
     'gallery/paintReservedAsync',
     async (payload) => {
-        const resp = await fetch(`https://backendamet.azurewebsites.net/update/${payload.id}`, {
+        const resp = await fetch(`https://backend-amet.azurewebsites.net/update/${payload.id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ export const paintReservedAsync = createAsyncThunk(
 export const paintNotReservedAsync = createAsyncThunk(
     'gallery/paintNotReservedAsync',
     async (payload) => {
-        const resp = await fetch(`https://backendamet.azurewebsites.net/update/${payload.id}`, {
+        const resp = await fetch(`https://backend-amet.azurewebsites.net/update/${payload.id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ export const paintNotReservedAsync = createAsyncThunk(
 export const addReservedPaintAsync = createAsyncThunk(
     'gallery/addReservedPaintAsync',
     async (payload) => {
-        const resp = await fetch('https://backendamet.azurewebsites.net/reserved', {
+        const resp = await fetch('https://backend-amet.azurewebsites.net/reserved', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ export const addReservedPaintAsync = createAsyncThunk(
 export const addCustomerAsync = createAsyncThunk(
     'gallery/addCustomerAsync',
     async (payload) => {
-        const resp = await fetch('https://backendamet.azurewebsites.net/customer', {
+        const resp = await fetch('https://backend-amet.azurewebsites.net/customer', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ export const addCustomerAsync = createAsyncThunk(
 export const addFanAsync = createAsyncThunk(
     'gallery/addFanAsync',
     async (payload) => {
-        const resp = await fetch('https://backendamet.azurewebsites.net/fan', {
+        const resp = await fetch('https://backend-amet.azurewebsites.net/fan', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ export const addFanAsync = createAsyncThunk(
 export const deleteReservedAsync = createAsyncThunk(
     'gallery/deleteReservedAsync',
     async (payload) => {
-        const resp = await fetch(`https://backendamet.azurewebsites.net/delete-paintingReserved/${payload.id}`, {
+        const resp = await fetch(`https://backend-amet.azurewebsites.net/delete-paintingReserved/${payload.id}`, {
             method: 'DELETE',
         });
 
