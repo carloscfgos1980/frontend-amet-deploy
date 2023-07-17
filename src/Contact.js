@@ -25,17 +25,9 @@ const Contact = () => {
         })
     }
 
-    const fansData = {
-        name: status.name,
-        last_name: status.last_name,
-        country: status.country,
-        telephone: status.telephone,
-        email: status.email,
-        comment: status.feedback
 
-    }
     const addFan = () => {
-        dispatch(addFanAsync(fansData))
+        dispatch(addFanAsync(status))
 
     }
 
